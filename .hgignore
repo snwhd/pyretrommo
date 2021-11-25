@@ -11,3 +11,5 @@ __pycache__
 \.swp$
 venv/
 pyretrommo/gen/wiki_cache
+dist/
+pyretrommo.egg-info/
