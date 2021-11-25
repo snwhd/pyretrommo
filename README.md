@@ -45,7 +45,7 @@ could be player base stats, boosts, or equipment stats.
 Some of the specific game details like classes, item stats, and abilities
 that may be more subject to change are found in `pyretrommo.gen`. These values
 are scraped from the RetroMMO wiki to make for easier updates
-(`see gen_from_wiki.py`). Note that this script will cache html files in the
+(see `gen_from_wiki.py`). Note that this script will cache html files in the
 `wiki_cache/` directory to avoid unnecessary HTTP requests during development.
 If you're not seeing expected results, try deleting this cache. The file names
 are `md5(url)`.
