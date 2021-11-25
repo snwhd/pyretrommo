@@ -43,6 +43,14 @@ class ApiPlayerInfo:
         self._time_played = time_played
         self.auto_fetch = auto_fetch
 
+    def __str__(self) -> str:
+        if self._rank is not None:
+            return f'<ApiPlayerInfo: {self.username} rank {self.rank}>'
+        return f'<ApiPlayerInfo: {self.username}>'
+
+    def __repr__(self) -> str:
+        return str(self)
+
     @property
     def rank(self) -> int:
         if self._rank is None:
@@ -75,7 +83,6 @@ class ApiPlayerInfo:
 
 def api_get(endpoint: str) -> Any:
     url = f'{BASE_URL}/{endpoint}'
-    print(f'fetching: {url}')
     r = requests.get(url)
     if r.status_code != 200:
         raise ApiError(r.status_code)
