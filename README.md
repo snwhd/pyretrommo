@@ -2,7 +2,7 @@
 python library for RetroMMO related stuff, including API wrapper.
 
 ## install
-`python3 -m pip install git+http://github.com/snwhd/pyretrommo.git`
+`python3 -m pip install git+https://github.com/snwhd/pyretrommo.git`
 
 ## web api usage
 `pyretrommo.api` exposes these api methods:
