@@ -1,0 +1,13 @@
+
+# build files
+\.js$
+\.js.map$
+\.hl$
+\.n$
+\.db$
+__pycache__
+.mypy_cache
+
+\.swp$
+venv/
+pyretrommo/gen/wiki_cache
