@@ -1,15 +1,13 @@
+# binary files
+\.swp$
 
-# build files
-\.js$
-\.js.map$
-\.hl$
-\.n$
-\.db$
+# python stuff
 __pycache__
 .mypy_cache
+venv
 
-\.swp$
-venv/
-pyretrommo/gen/wiki_cache
-dist/
+# build stuff
+dist
 pyretrommo.egg-info/
+
+pyretrommo/gen/wiki_cache
